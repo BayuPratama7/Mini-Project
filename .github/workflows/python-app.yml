@@ -26,7 +26,8 @@ jobs:
     # Install dependencies
     - name: Install dependencies
       run: |
-        sudo apt-get install -y libffi-dev libssl-devt
+        python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
     # Jalankan aplikasi atau pengujian
     - name: Run the application
